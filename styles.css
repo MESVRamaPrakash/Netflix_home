@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/* =========== navbar ============ */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+
+.btn-signin {
+    border: 0;
+    outline: 0;
+    background-color: #db0001;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: #fff;
+    padding: 7px 20px;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+    margin: 3px 5rem;
+}
+
+.buttonbtn {
+    margin: -20px 90px 0px;
+}
+
+/* ============ header =============== */
+.header {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url(./assets/bgimg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 105vh;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+
+h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 400;
+}
+
+.header-content p {
+    color: #fff;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+}
+
+form input[type=email] {
+    width: 400px;
+    height: 50px;
+    /* background-color: transparent; */
+    border: 1px solid #fff;
+    color: white;
+    padding-left: 20px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+form input::placeholder {
+    padding-left: 0px;
+    font-size: 1.rem;
+    font-weight: 600;
+
+}
+
+.submit {
+    padding: 13px 30px;
+    background-color: #db0001;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 2rem;
+}
+
+.form {
+    margin-left: 10%;
+}
+
+/* ============ content ============== */
+hr {
+    margin-top: .6rem;
+    height: 10px;
+    width: 100%;
+    margin: 0 auto;
+    opacity: .2;
+    background-color: #777;
+    border-radius: 20px;
+}
+
+.features {
+    padding: 50px 12%;
+    font-size: 20px;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0%;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.text-col p {
+    font-size: 25px;
+}
+
+.features h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+
+/* ============  FAQ  ================= */
+
+.faq {
+    padding: 10px 8.5%;
+    font-size: 10px;
+    color: #fff;
+}
+
+.faq h2 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-left: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.accordation {
+    margin-left: 1rem;
+    width: 100%;
+    max-width: 100rem;
+}
+
+.accordation li {
+    list-style-type: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordation li label {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    font-size: 24px;
+    background-color: #222;
+    cursor: pointer;
+    position: relative;
+    transition: all .5s;
+}
+
+.accordation li label:hover {
+    background-color: #444;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.faq .accordation .content {
+    background-color: #222;
+    font-size: 26px;
+    margin: 2px 0px;
+    padding: 20px;
+    transition: 1s;
+    display: none;
+}
+
+.accordation input[type=radio]:checked+label+.content {
+    max-height: 550px;
+    padding: 30px 20px;
+    display: block;
+}
+
+.accordation input[type=radio]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+
+/* ============ footer =============== */
+.footer {
+    padding: 50px 10% 10px;
+}
+
+.footer h1 {
+    color: #ddd;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.footer .col {
+    margin-bottom: 20px;
+    flex-basis: 25%;
+    flex-grow: 1;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 30px 0;
+    display: flex;
+}
+
+.footer .col a {
+    /* text-decoration: none; */
+    display: block;
+    color: #ddd;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #777;
+    padding: 6px 17px;
+    background-color: rgb(16, 16, 16);
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer p {
+    color: #777;
+    padding-top: 50px;
+    padding-left: 5px;
+}
